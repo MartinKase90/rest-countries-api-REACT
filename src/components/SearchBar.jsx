@@ -13,7 +13,7 @@ function SearchBar({
 
     <form onSubmit={onSubmitHandler}>
       <div className="input-group mb-3 input-group-sm">
-        <div className="input-group-prepend">
+        <div id="searchIcon" className="input-group-prepend">
           <span className="input-group-text"><FontAwesomeIcon icon={faSearch}/></span>
         </div>
         <input className="form-control" type="text"
