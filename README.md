@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop](./screenshot/rest-country-api-REACT-desktop.jpg)
-![mobile](./screenshot/rest-country-api-REACT-mobile.jpg)
+![desktop](./screenshots/rest-country-api-REACT-desktop.jpg)
+![mobile](./screenshots/rest-country-api-REACT-mobile.jpg)
 
 
 ### Links
