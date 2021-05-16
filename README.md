@@ -30,14 +30,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/rest-country-api-REACT-desktop.jpg)
-![](./screenshot/rest-country-api-REACT-mobile.jpg)
+![desktop](./screenshot/rest-country-api-REACT-desktop.jpg)
+![mobile](./screenshot/rest-country-api-REACT-mobile.jpg)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+- Live Site URL: [Rest-country-api-React](https://rest-country-api-react.herokuapp.com/)
 
 ## My process
 
