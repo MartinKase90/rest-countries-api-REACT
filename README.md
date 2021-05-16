@@ -67,12 +67,12 @@ Learned how to utilize the BrowserRouter from react-router-dom to handle routing
 ```
 
 And how to use the params from react-router-dom.
-"""js
+```js
 function DetailsPage({match}){
   let{
     params: {country}
   } = match;
-"""
+```
 
 
 ### Continued development
