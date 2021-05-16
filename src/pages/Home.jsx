@@ -22,15 +22,15 @@ function Home(){
   const [key, setKey] = useState("");
   const [region, setRegion] = useState("");
   //darkmode half assed attempt
-  const storedDarkMode = localStorage.getItem("DARK_MODE");
-  const [darkMode, setDarkMode] = useState(storedDarkMode);
+  // const storedDarkMode = localStorage.getItem("DARK_MODE");
+  // const [darkMode, setDarkMode] = useState(storedDarkMode);
 
   let api = "";
 
 
-  function onDarkMode(){
-    setDarkMode(darkMode ? false: true);
-  }
+  // function onDarkMode(){
+  //   setDarkMode(darkMode ? false: true);
+  // }
 
   function onInputChange(e){
     setSearchTerm(e.target.value);
@@ -67,7 +67,7 @@ function Home(){
   }
 
     useEffect(() => {
-      localStorage.setItem("DARK_MODE", darkMode);
+      // localStorage.setItem("DARK_MODE", darkMode);
       let unmounted = false;
 
       fetch(api)
@@ -87,7 +87,8 @@ function Home(){
           }
         );
         return () => {unmounted = true};
-      }, [api, darkMode]);
+      // }, [api, darkMode]);
+      }, [api]);
     if(error){
         return <div>Error: {error.message}</div>
       } else if (!isLoaded){
@@ -96,7 +97,7 @@ function Home(){
       return (
         <div >
           <Header
-            onClick={onDarkMode}
+            // onClick={onDarkMode}
           />
             <div className="row ">
               <div className=" col-lg-10 col-md-8 col-sm-11 " >

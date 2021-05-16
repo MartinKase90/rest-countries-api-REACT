@@ -19,21 +19,14 @@ function DetailsPage({match}){
   const API_BASE_THREEAPLHA = "https://restcountries.eu/rest/v2/alpha/";
   let api = "";
   //darkmode half assed attempt
-  const storedDarkMode = localStorage.getItem("DARK_MODE");
-  const [darkMode, setDarkMode] = useState(storedDarkMode);
-  function onDarkMode(){
-    setDarkMode(darkMode ? false: true);
-  }
-
-
-
-
-
-
-
+  // const storedDarkMode = localStorage.getItem("DARK_MODE");
+  // const [darkMode, setDarkMode] = useState(storedDarkMode);
+  // function onDarkMode(){
+  //   setDarkMode(darkMode ? false: true);
+  // }
 
   useEffect(() =>{
-    localStorage.setItem("DARK_MODE", darkMode);
+    // localStorage.setItem("DARK_MODE", darkMode);
     if(country.length != 3){
       api = API_BASE_URL  + country;
     }else{
@@ -43,8 +36,6 @@ function DetailsPage({match}){
     console.log(api);
 
     let unmounted = false;
-
-
 
    fetch(api)
     .then(res => res.json())
@@ -57,9 +48,6 @@ function DetailsPage({match}){
           }
           setItem(result);
           setIsLoaded(true);
-
-
-
           }
         },
         (error) =>{
@@ -69,18 +57,20 @@ function DetailsPage({match}){
           }
         }
       );
-    }, [country, darkMode]);
+    // }, [country, darkMode]);
+    }, [country]);
   if(error){
       return
          <div>Error: {error.message}</div>
-      
+
     } else if (!isLoaded){
       return <div>Loading...</div>
     } else{
       return(
-        <div data-theme={darkMode ? "dark" : "light"}>
+        // <div data-theme={darkMode ? "dark" : "light"}>
+        <div>
           <Header
-              onClick={onDarkMode}
+              // onClick={onDarkMode}
           />
           <Link to="/" id="backButton" className="btn btn-primary">back</Link>
            <DetailContent

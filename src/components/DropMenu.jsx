@@ -15,11 +15,8 @@ function DropMenu(props){
         <Dropdown.Item eventKey="Europe"onSelect={props.onSelect}>Europe</Dropdown.Item>
         <Dropdown.Item eventKey="Oceania"onSelect={props.onSelect}>Oceania</Dropdown.Item>
       </Dropdown.Menu>
-
     </Dropdown>
-
   );
 }
 
 export default DropMenu;
-// className="dropDown"

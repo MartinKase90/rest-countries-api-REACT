@@ -4,10 +4,17 @@
 .navBrand{
   margin-left: 15px;
 }
-
+h1{
+  font-family: "Nanito" , Sans;
+  font-weight:800;
+}
+h2{
+  font-family: "Nanito" , Sans;
+  font-weight:600;
+}
 /* Home */
 
-/* searchbar and dropdown */
+  /* searchbar and dropdown */
   #dropdown-basic{
     margin-top: 20px;
     margin-left: 30px;
@@ -15,7 +22,7 @@
     outline: 0px;
     border: 0px;
     color: black;
-    box-shadow: 0 2px 5px #ccc;
+    box-shadow: 0 2px 2px #ccc;
   }
 
   .filter toggle{
@@ -70,7 +77,7 @@
     border-right-color: white;
 
   }
-/* country cards */
+  /* country cards */
   .note {
     background: #fff;
     border-radius: 7px;
@@ -129,12 +136,11 @@
   .h2diff{
     font-size: 0.8em;
     color: grey;
+    font-family: "Nanito" , Sans;
+    font-weight: 300;
   }
 /* DetailsPage */
   .detail{
-    /* background-color: hsl(207, 26%, 17%); */
-    /* background-color: hsl(200, 15%, 8%); */
-
     column-count: 2;
 
     column-gap: 50px;

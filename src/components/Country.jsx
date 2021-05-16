@@ -1,19 +1,7 @@
 import React, {useState} from "react";
-// import Card from 'react-bootstrap/Card';
-
-// import styles from "./compStyles/Country.module.css";
 import { Link } from "react-router-dom";
-
-
 function Country(props){
-
-
-
   return (
-
-
-
-    //unique country === numericCode from api
     <Link className="note" to={"/country/" + props.name} >
       <div >
         <img
@@ -30,8 +18,4 @@ function Country(props){
       </Link>
   );
 }
-
-// <h2>Population: </h2>
-// <h2>Region: </h2>
-// <h2>Captiol: </h2>
 export default Country;
