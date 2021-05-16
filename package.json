@@ -1,12 +1,9 @@
 {
-  "homepage": "https://github.com/MartinKase90/rest-countries-api-REACT"
   "name": "rest-countries-api-with-color-theme-switcher-master",
   "version": "1.0.0",
   "description": "![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
