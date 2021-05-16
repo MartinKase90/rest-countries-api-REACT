@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Header from "../components/Header";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 import { useLocation, useParams, useRouteMatch } from 'react-router-dom';
 
 
@@ -72,7 +74,7 @@ function DetailsPage({match}){
           <Header
               // onClick={onDarkMode}
           />
-          <Link to="/" id="backButton" className="btn btn-primary">back</Link>
+          <Link to="/" id="backButton" className="btn btn-primary"><FontAwesomeIcon icon={faArrowLeft}/>back</Link>
            <DetailContent
                     name={item[0].name}
                     flag={item[0].flag}

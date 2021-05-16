@@ -1,9 +1,15 @@
 
 /* App wide */
-
+/* header */
 .navBrand{
   margin-left: 15px;
 }
+#darkmodeButton .svg-inline--fa{
+  margin-left: -5px;
+  margin-right: 5px;
+}
+
+
 h1{
   font-family: "Nanito" , Sans;
   font-weight:800;
@@ -146,6 +152,8 @@ h2{
     column-gap: 50px;
   }
   #backButton{
+    width: 100px;
+    height: 40px;
     margin-top: 30px;
     margin-left: 35px;
     margin-bottom: 50px;
@@ -154,6 +162,10 @@ h2{
     outline: 0px;
     border: 0px;
     box-shadow: 0 2px 5px #ccc;
+  }
+  #backButton .svg-inline--fa {
+    margin-left: -20px;
+    margin-right: 20px;
   }
   .detail img{
     max-width: 430px;
