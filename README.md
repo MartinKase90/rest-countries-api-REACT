@@ -78,7 +78,7 @@ function DetailsPage({match}){
 ### Continued development
 
 Implementing dark mode to the project.
-Unsure about the approach as most articles about were quite vague about it.
+Unsure about the approach as most articles were quite vague about it.
 
 Unsure about using modules.css and or sass for projects of this size.
 
