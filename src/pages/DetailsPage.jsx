@@ -82,10 +82,10 @@ function DetailsPage({match}){
                     capital={item[0].capital}
                     region={item[0].region}
                     subregion={item[0].subregion}
-                    borderCountry={item[0].borders}
+                    borderCountry={item[0].borders ? item[0].borders : []}
                     nativeName={item[0].nativeName}
                     topLevelDomain={item[0].topLevelDomain}
-                    currency={item[0].currencies[0].name}
+                    currency={item[0].currencies ? item[0].currencies[0].name : ""}
                     languages={item[0].languages[0].name}
                   />
         </div>
