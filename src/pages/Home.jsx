@@ -9,11 +9,11 @@ import Country from "../components/Country";
 
 function Home(){
 
-  const API_BY_ALL = "https://restcountries.eu/rest/v2/all";
+  const API_BY_ALL = "https://restcountries.com/v2/all";
   //API_BY_NAME can be partial name or native name, must add {name} at end
-  const API_BY_NAME ="https://restcountries.eu/rest/v2/name/";
+  const API_BY_NAME ="https://restcountries.com/v2/name/";
   //API_BY_REGION, get all by region add {region} at end
-  const API_BY_REGION ="https://restcountries.eu/rest/v2/region/";
+  const API_BY_REGION ="https://restcountries.com/v2/region/";
   const [searchTerm, setSearchTerm] = useState("");
   const [countries, setCountries] = useState([]);
   const [search, setSearch] = useState(false);
