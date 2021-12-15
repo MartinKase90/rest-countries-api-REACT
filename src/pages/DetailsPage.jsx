@@ -17,8 +17,8 @@ function DetailsPage({match}){
   const [error, setError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const API_BASE_URL = "https://restcountries.eu/rest/v2/name/";
-  const API_BASE_THREEAPLHA = "https://restcountries.eu/rest/v2/alpha/";
+  const API_BASE_URL = "https://restcountries.com/v2/name/";
+  const API_BASE_THREEAPLHA = "https://restcountries.com/v2/alpha/";
   let api = "";
   //darkmode half assed attempt
   // const storedDarkMode = localStorage.getItem("DARK_MODE");
